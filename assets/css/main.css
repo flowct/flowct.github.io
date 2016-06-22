@@ -180,13 +180,13 @@ a:after {
 
 /* Copyright Wrap */
 
-#c {
+#copyright {
 	background: #222222;
 	padding-top: 15px;
 	text-align: right;
 }
 
-#c p {
+#copyright p {
 	color: white
 }
 
