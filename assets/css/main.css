@@ -71,30 +71,30 @@ a:after {
    Wrap Sections
    ========================================================================== */
 
-#headerwrap {
+#home {
 	background-color: #34495e;
 	padding-top: 60px;
 }
 
-#headerwrap h1 {
+#home h1 {
 	margin-top: 30px;
 	color: white;
 	font-size: 70px;
 	
 }
 
-#headerwrap h3 {
+#home h3 {
 	color: white;
 	font-size: 30px;
 }
 
-#headerwrap h5 {
+#home h5 {
 	color: white;
 	font-weight: 700;
 	text-align: left;
 }
 
-#headerwrap p {
+#home p {
 	text-align: left;
 	color: white
 }
