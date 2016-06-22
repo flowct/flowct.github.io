@@ -18,7 +18,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
     <script src="assets/js/jquery.min.js"></script>
-    <!-- <script src="assets/js/smoothscroll.js"></script> -->
+     <script src="assets/js/smoothscroll.js"></script> 
     
 
   </head>
@@ -26,7 +26,7 @@
   <body data-offset="0" data-target="#navigation">
 
     <!-- Fixed navbar -->
-	    <div id="navigation" class="navbar navbar-default navbar-fixed-top">
+	    <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
 	      <div class="container">
 	        <div class="navbar-header">
 	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,7 +38,7 @@
 	        </div>
 	        <div class="navbar-collapse collapse">
 	          <ul class="nav navbar-nav">
-	            <li class=""><a href="#home" class="smothscroll">Home</a></li>
+	            <li class=""><a href="#headerwrap" class="smothscroll">Home</a></li>
 	            <li><a href="#overview" class="smothscroll">Overview</a></li>
 	            <li><a href="#features" class="smothScroll">Features</a></li>
 	            <li><a href="#enterprise" class="smothScroll">Screenshots</a></li>
@@ -47,11 +47,46 @@
 	          </ul>
 	        </div><!--/.nav-collapse -->
 	      </div>
-	    </div>
+	    </nav>
 
+<!--<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+<a class="navbar-brand" href="#"><img height="50px" src="images/uvaca-logo.png" width="96px"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a class="page-scroll" href="#page-top">Home</a></li>
+                <li><a class="page-scroll" page-scroll href="#broadband">Broadband</a></li>
+                <li><a class="page-scroll" page-scroll href="#ott">Digital TV</a></li>
+                <li><a class="page-scroll" page-scroll href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>-->
 
-	<section id="home" name="home">
-	<div id="headerwrap">
+<!--<header id="page-top">
+    <div class="container">
+    <br><br><br><br>
+        <div class="heading">
+            <h1>
+                Software Defined Access Network
+            </h1>
+            <br><br><br>
+            <h2>Agile last-mile solutions for Broadband and Cable TV operators<br/> </h2>
+        </div>
+
+    </div>
+</header>-->
+
+	<!--<section id="home" name="home">-->
+	<header id="headerwrap">
 	    <div class="container">
 	    	<div class="row centered">
 	    		<div class="col-lg-12">
@@ -77,8 +112,8 @@
 	    		</div>
 	    	</div>
 	    </div> <!--/ .container -->
-	</div><!--/ #headerwrap -->
-	</section>
+	</header><!--/ #headerwrap -->
+	<!--</section>-->
 
 
 	<section id="overview" name="overview">
@@ -362,12 +397,14 @@
 	</div>
 	</section>
 
-	<div id="copyright">
-		<div class="container">
-			<p>Copyright <a href="http://www.flowct.com">Uvaca, Inc.</a></p>
-		
+	<section id="copyright" name="copyright">
+		<div>
+			<div class="container">
+				<p>Copyright <a href="http://www.flowct.com">Uvaca, Inc.</a></p>
+			
+			</div>
 		</div>
-	</div>
+	</section>
 <!-- Button trigger modal -->
 <!--<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   Launch demo modal
@@ -395,8 +432,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
 
 	<script>
 	$('.carousel').carousel({
