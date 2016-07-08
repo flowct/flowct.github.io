@@ -31,7 +31,7 @@ p {
 
 /* Links */
 a {
-    color: #3bc492;
+    color: #6f96bd;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -43,7 +43,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #c0392b;
+    color: #3d7dde;
     text-decoration: none;
     outline: 0;
 }
@@ -72,7 +72,7 @@ a:after {
    ========================================================================== */
 
 #home {
-	background-color: #34495e;
+	background-color: #536b84;
 	padding-top: 60px;
 }
 
@@ -196,4 +196,27 @@ a:after {
 
 .carousel-indicators .active {
 	background-color: #000;
+}
+
+.navbar-default .navbar-brand {
+    color: #487aad;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #3e6996;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #5381af;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #04396d;
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: #f7f7f7;
+    border-color: #ededed;
 }
