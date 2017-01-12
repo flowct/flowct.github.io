@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlowCT - Continuous Testing Framework">
+    <!--<link rel="shortcut icon" href="assets/ico/favicon.png">-->
+
+    <title>FlowCT - Support</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+     <script src="assets/js/smoothscroll.js"></script> 
+    
+
+  </head>
+
+  <body data-offset="0" data-target="#navigation">
+
+    <!-- Fixed navbar -->
+	    <nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="navbar-brand" href="#">Flow<b>CT</b></a>
+	        </div>
+	        <div class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class=""><a href="/" class="smothscroll">Home</a></li>
+	          </ul>
+	        </div><!--/.nav-collapse -->
+	      </div>
+	    </nav>
+
+
+	<!--<section id="home" name="home">-->
+	<header id="homex">
+	    <div class="container">
+	    	<div class="row centered">
+	    		<div class="col-lg-12">
+					<h1>Contact Support</h1>
+					<br>
+	    		</div>
+	    	</div>
+            <section id="support" name="support">
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-lg-offset-3">
+                            <form id="input-form" action="" method="POST" target="no-target"> 
+                            <div class="form-group">
+                                <label for="full_name">Your Name</label>
+                                <input type="name" name="fullName" class="form-control" id="full_name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email1">Email address</label>
+                                <input type="email" name="Mail" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Enter Subject" required>
+                            </div>                            
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea id="message" class="form-control" name="message" rows="3"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Severity of Issue:</label>
+                                <select class="form-control" id="severity" name="severity">
+                                    <option value="" selected="selected">Please specify...</option>
+                                    <option value="Outage">Outage</option>
+                                    <option value="Urgent">Urgent</option>
+                                    <option value="High">High</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select>
+                            </div>
+                            <br>
+                            <button id="form-submit" type="submit" class="btn btn-large btn-success">SUBMIT</button>
+                            </form>
+                            <br>
+                            <p id="input-feedback"></p>
+                            <iframe src="blank.html" id="no-target" name="no-target" style="visibility:hidden"></iframe>				
+                            </div>
+                        </div>
+                        <br><br>
+                        <hr>
+                    </div><!-- /container -->
+                </div>
+            </section>            
+	    </div> <!--/ .container -->
+	</header><!--/ #headerwrap -->
+	<!--</section>-->
+
+
+
+
+
+
+	<section id="contact" name="contact">
+	<div>
+		<div class="container">
+			<div class="col-lg-6">
+				<h3>Address</h3>
+				<p>
+				4701 Patrick Henry Dr, Bldg. 26</br>
+				Santa Clara, CA 95054 USA</br>
+				United States
+				</p>
+			</div>
+			<div class="col-lg-6">
+				<h3>Email & Phone</h3>
+				<p>
+				<b>Email:</b> contact-us@uvaca.com</br>
+				<b>Phone:</b> +1-408-890-7205 
+				</p>
+			</div>
+			
+		</div>
+	</div>
+	</section>
+
+	<section id="copyright" name="copyright">
+		<div>
+			<div class="container">
+				<p>Copyright <a href="http://www.flowct.com">Uvaca, Inc.</a></p>
+			
+			</div>
+		</div>
+	</section>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+	<script>
+	$('#input-form').one('submit',function(){
+			var your_name = encodeURIComponent($('#full_name').val());
+			var email = encodeURIComponent($('#email').val());
+			var subject = encodeURIComponent($('#subject').val());
+			var severity = encodeURIComponent($('#severity').val());
+			var message = encodeURIComponent($('#message').val());
+			var fullNameID = "entry.117199501";
+			var emailID = "entry.1867148044";
+			var subjectID = "entry.1506691066";
+			var severityID = "entry.412549171";
+			var messageID = "entry.15290891";
+			var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLScChUGRSMZudA5qeuFVUtO7wUx9m8SfTcT7EnlQ8ZZLxW8Asw/formResponse?';
+			var submitRef = '&submit=Submit';
+			var submitURL = (baseURL + fullNameID + "=" + your_name + "&" + emailID + "=" + email + "&" + subjectID + "=" + subject + "&" + messageID + "=" + message  + "&" + severityID + "=" + severity + submitRef);
+			console.log(submitURL);
+			$(this)[0].action=submitURL;
+			$('#input-feedback').text('Thank You! Our Support team will get back to you ASAP.');
+            $('#form-submit').attr('disabled','disabled');
+            $('#full_name').attr('disabled','disabled');
+            $('#email').attr('disabled','disabled');
+            $('#subject').attr('disabled','disabled');
+            $('#message').attr('disabled','disabled');
+            $('#severity').attr('disabled','disabled');
+	});
+	</script>
+  </body>
+</html>
